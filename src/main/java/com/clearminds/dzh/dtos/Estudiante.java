@@ -4,22 +4,34 @@ public class Estudiante {
 	private String nombre;
 	private String apellido;
 	private int id;
+	private int edad;
 
 	public Estudiante() {
 	
 	}
 
-	public Estudiante(String nombre, String apellido, int id) {
+	public Estudiante(String nombre, String apellido, int id, int edad) {
 
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
+		this.edad= edad;
+
 	}
 
 	public Estudiante(String nombre, String apellido) {
 
 		this.nombre = nombre;
 		this.apellido = apellido;
+	}
+
+	
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	public String getNombre() {
